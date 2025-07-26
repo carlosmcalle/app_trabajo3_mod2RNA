@@ -10,7 +10,7 @@ class_names = ['other_activities', 'safe_driving', 'talking_phone', 'texting_pho
 
 @st.cache_resource
 def load_model():
-    model_path = Path(__file__).parents[1]/"model_module_2.keras"
+    model_path = "model_module_2.keras"
     try:
         model = tf.keras.models.load_model(model_path)
         return model
